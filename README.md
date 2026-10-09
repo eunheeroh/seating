@@ -5,6 +5,8 @@
 
 React + Vite로 만들었습니다.
 
+👉 **바로 사용하기: https://seating-brown.vercel.app**
+
 ## 실행하기
 
 [Node.js](https://nodejs.org/) 18 이상이 필요합니다.
@@ -26,6 +28,7 @@ npm run build    # 배포용 파일을 dist/ 폴더에 만들기
 - **인쇄**: 교실 배치도만 A4 가로 한 장에 인쇄합니다.
 - **엑셀 저장**: 색이 칠해진 자리배치도 시트와 명단 시트가 담긴 `.xlsx` 파일로 저장합니다.
 - **한글 / 영어** 화면 전환을 지원합니다.
+- **앱 설치 (PWA)**: 휴대폰·PC 홈 화면에 설치할 수 있고, 한 번 열어 두면 인터넷 없이도 모든 기능이 동작합니다.
 
 ## 사용 방법
 
@@ -78,16 +81,26 @@ txt는 한 줄에 한 명씩 적습니다. 아래 형식을 모두 읽을 수 �
 │       ├── seating.js         남녀 분리 랜덤 배치 알고리즘
 │       ├── roster.js          엑셀·txt 명단 읽기
 │       └── exportExcel.js     엑셀 파일 만들기
+├── public/
+│   ├── icons/                 앱 아이콘 (일반 · maskable · iOS)
+│   ├── favicon.ico
+│   └── privacy.html           개인정보처리방침
 ├── .github/workflows/
 │   └── deploy.yml             GitHub Pages 자동 배포
 ├── samples/                   예시 명단 파일
 │   ├── 테스트_학생명단_30명.xlsx
 │   ├── 학생명단_샘플_40명.txt
 │   └── students_sample_en_40.txt
-└── docs/            제작 과정 문서
+└── docs/                      문서
     ├── 제작_프롬프트.md
-    └── 코드_흐름도.md
+    ├── 코드_흐름도.md
+    └── store/                 플레이스토어 등록 자료 (아이콘, 그래픽 이미지, 등록 정보 초안)
 ```
+
+## Google Play 등록
+
+PWA를 [PWABuilder](https://www.pwabuilder.com)로 안드로이드 앱(TWA)으로 감싸서 등록합니다.
+등록 정보 초안과 단계별 방법은 [docs/store/스토어_등록정보.md](docs/store/스토어_등록정보.md)에 있습니다.
 
 ## GitHub Pages로 공개하기
 

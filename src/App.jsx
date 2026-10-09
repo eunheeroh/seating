@@ -203,6 +203,10 @@ export default function App() {
         />
 
         <ExportBar enabled={!!assignment} onPrint={() => window.print()} onExcel={saveExcel} />
+
+        <footer className="footer">
+          <a href="./privacy.html" target="_blank" rel="noopener">{t.privacy}</a>
+        </footer>
       </div>
     </LangContext.Provider>
   );

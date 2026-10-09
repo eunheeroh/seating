@@ -62,7 +62,8 @@ export const I18N = {
     importSkipped: (n) => ` (성별을 알 수 없는 ${n}명 제외)`,
     importEmpty: '⚠️ 파일에서 학생 이름을 찾지 못했어요.',
     importBadType: '⚠️ .xlsx, .xls, .csv, .txt 파일만 불러올 수 있어요.',
-    importFail: '⚠️ 파일을 읽는 중 문제가 생겼어요.'
+    importFail: '⚠️ 파일을 읽는 중 문제가 생겼어요.',
+    privacy: '개인정보처리방침'
   },
   en: {
     title: 'Classroom Seating',
@@ -124,7 +125,8 @@ export const I18N = {
     importSkipped: (n) => ` (${n} skipped — unknown gender)`,
     importEmpty: '⚠️ No student names were found in the file.',
     importBadType: '⚠️ Only .xlsx, .xls, .csv and .txt files can be loaded.',
-    importFail: '⚠️ Something went wrong while reading the file.'
+    importFail: '⚠️ Something went wrong while reading the file.',
+    privacy: 'Privacy Policy'
   }
 };
 

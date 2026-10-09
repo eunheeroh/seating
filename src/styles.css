@@ -682,13 +682,21 @@ button:active { transform: translateY(1px); }
   color: var(--muted);
 }
 
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -4px;
+}
+.footer a { color: var(--muted); }
+.footer a:hover { color: #2f8a68; }
+
 /* ── 인쇄: 교실 배치도만 A4 가로 한 장에 ── */
 @page { size: A4 landscape; margin: 10mm; }
 
 @media print {
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { background: #fff; padding: 0; min-height: 0; }
-  .topbar, .panel, .warn, .hint, .export-bar { display: none !important; }
+  .topbar, .panel, .warn, .hint, .export-bar, .footer { display: none !important; }
   .layout { max-width: none; gap: 8px; }
   .legend { margin: 0; }
   .legend-item { box-shadow: none; border: 1px solid var(--line); }
